@@ -1,0 +1,40 @@
+{
+  "name": "petabyte",
+  "version": "1.0.0",
+  "description": "Enter the petaverse!",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trufflesuite/petabyte.git"
+  },
+  "keywords": [
+    "ethereum",
+    "truffle",
+    "ganache",
+    "web3",
+    "blockchain",
+    "solidity",
+    "infura",
+    "metamask",
+    "pets"
+  ],
+  "author": "ConsenSys Software",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/trufflesuite/petabyte/issues"
+  },
+  "homepage": "https://github.com/trufflesuite/petabyte#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
+    "ganache": "^7.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "husky": "^8.0.1"
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "editor.formatOnSave": false,
+    "github.copilot.enable": {
+		".env": false,
+		"yaml": false,
+		"plaintext": false,
+		"env": false,
+		"key": false
+    },
+    "files.exclude": {
+       "**/.git": true,
+       "**/.svn": true,
+       "**/.hg": true,
+       "**/CVS": true,
+       "**/.DS_Store": true,
+       "**/.cache": true,
+       "**/.vs/": true,
+       "**/*.cs": true,
+       "**/*.orig": true,
+       "**/bin/": true,
+       "**/build/": true,
+       "**/debug/": true,
+       "**/dist/": true,
+       "**/node_modules/": true,
+       "**/obj": true,
+       "yarn-error.log": true,
+       "**/yarn-error.log": true
+    },
+    "explorerExclude.backup": null,
+    "search.exclude": {
+       "**/yarn-error.log": true,
+       "**/yarn.lock": true
+    }
+ }

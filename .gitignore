@@ -1,0 +1,17 @@
+# general
+.DS_Store
+tmp
+dist
+coverage
+
+# dependencies
+/node_modules
+**/node_modules
+
+# artifacts
+build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
