@@ -1,4 +1,4 @@
-# Petabyte 🐰 🐶 🐱 🐭 🐹
+# Web3 Unleashed 🐰 🐶 🐱 🐭 🐹
 
 A boilerplate for the petaverse!
 
