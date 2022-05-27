@@ -1,16 +1,13 @@
 {
-  "name": "petabyte",
+  "name": "unleashed",
   "version": "1.0.0",
   "description": "Enter the petaverse!",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/trufflesuite/petabyte.git"
+    "url": "git+https://github.com/trufflesuite/unleashed.git"
   },
   "keywords": [
     "ethereum",
@@ -26,9 +23,9 @@
   "author": "ConsenSys Software",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/trufflesuite/petabyte/issues"
+    "url": "https://github.com/trufflesuite/unleashed/issues"
   },
-  "homepage": "https://github.com/trufflesuite/petabyte#readme",
+  "homepage": "https://github.com/trufflesuite/unleashed#readme",
   "dependencies": {
     "@openzeppelin/contracts": "^4.6.0",
     "ganache": "^7.1.0"
