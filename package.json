@@ -1,6 +1,7 @@
 {
   "name": "unleashed",
   "version": "1.0.0",
+  "private": true,
   "description": "Enter the petaverse!",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,10 +27,9 @@
     "url": "https://github.com/trufflesuite/unleashed/issues"
   },
   "homepage": "https://github.com/trufflesuite/unleashed#readme",
-  "dependencies": {
-    "@openzeppelin/contracts": "^4.6.0",
-    "ganache": "^7.1.0"
-  },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "eslint": "^8.15.0",
     "husky": "^8.0.1"
