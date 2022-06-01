@@ -5,7 +5,7 @@ A boilerplate for the petaverse!
 ## Setup
 
 ```bash
-$ yarn
+$ yarn install
 ```
 
 ## Getting Started
