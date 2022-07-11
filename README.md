@@ -9,16 +9,27 @@ In this tutorial, we will be creating a Bored Pets NFT smart contract for our Pe
 
 ## Setup
 
-First, we'll want to build our Petaverse by cloning the unleashed repository's [main branch](https://github.com/trufflesuite/unleashed/tree/main). We recommend cloning it into a folder called `bored-pets-nft`. Follow the setup instructions [here]()
+First, we'll want to build our Petaverse by cloning the unleashed repository's [main branch](https://github.com/trufflesuite/unleashed/tree/main). We recommend cloning it into a folder called `erc20-token`. Follow the setup instructions [here]()
 
 You should have:
 1. The `unleashed` repository cloned
-2. Truffle installed
-3. Ganache installed
-4. An Infura account
-5. A MetaMask wallet
 
-<TODO: Put in set up instructions on base repo>
+`git clone git@github.com:trufflesuite/unleashed.git`
+
+2. Next install Truffle
+
+`yarn install truffle -g`
+
+3. Next install Ganache
+
+`yarn install ganache -g`
+
+Helpful, but optional:
+- An [Infura](https://infura.io/) account and Project ID
+- A [MetaMask](https://metamask.io/) account
+
+
+
 
 Once you've gotten these installation requirements down, we can start building the NFT smart contract!
 
@@ -107,9 +118,30 @@ This tutorial outlines how to deploy with Infura, but Truffle has great features
 1. Use Dashboards so you don't have to expose your private key
 2. Use Ganache forking to test using real data and interact with live contracts locally
 
-<TODO: Create guides for each of these>
 
-## Test the smart contract
+### Using Truffle Dashboard (recommended)
+
+Truffle Dashboard ships with Truffle and can be started with `truffle dashboard`. This in turn loads the dashboard at http://localhost:24012 and beyond that you'll just need to run your migration (`truffle migrate`). A more detailed guide to using Truffle Dashboard is available [here](https://trufflesuite.com/blog/introducing-truffle-dashboard/).
+
+### Using the env File
+
+You will need at least one mnemonic to use with the network. The `.dotenv` npm package has been installed for you, and you will need to create a `.env` file for storing your mnemonic and any other needed private information.
+
+The `.env` file is ignored by git in this project, to help protect your private data. In general, it is good security practice to avoid committing information about your private keys to github. The `truffle-config.js` file expects a `MNEMONIC` value to exist in `.env` for running commands on each of these networks, as well as a default `MNEMONIC` for the Arbitrum network we will run locally.
+
+If you are unfamiliar with using `.env` for managing your mnemonics and other keys, the basic steps for doing so are below:
+
+1) Use `touch .env` in the command line to create a `.env` file at the root of your project.
+2) Open the `.env` file in your preferred IDE
+3) Add the following, filling in your own Infura project key and mnemonics:
+
+```
+MNEMONIC="<YOUR MNEMONIC HERE>"
+INFURA_KEY="<Your Infura Project ID>"
+RINKEBY_MNEMONIC="<Your Rinkeby Mnemonic>"
+MAINNET_MNEMONIC="<Your Mainnet Mnemonic>"
+```
+
 
 ...
 
