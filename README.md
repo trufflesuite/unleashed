@@ -28,7 +28,7 @@ Helpful, but optional:
 - An [Infura](https://infura.io/) account and Project ID
 - A [MetaMask](https://metamask.io/) account
 
-Once you've gotten these installation requirements down, we can start building the NFT smart contract!
+Once you've gotten these installation requirements down, we can start building the Token smart contract!
 
 ## Core Concepts
 
