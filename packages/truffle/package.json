@@ -1,19 +1,10 @@
 {
-  "name": "truffle",
+  "name": "truffle-projet",
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.6.0",
-    "@openzeppelin/test-helpers": "^0.5.15"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "devDependencies": {},
-  "author": "",
-  "license": "MIT",
-  "main": "index.js",
-  "description": ""
+    "@openzeppelin/contracts": "^4.6.0"
+  }
 }
