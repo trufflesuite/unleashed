@@ -3,6 +3,7 @@
 tmp
 dist
 coverage
+.env
 
 # dependencies
 /node_modules
