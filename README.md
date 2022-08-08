@@ -30,7 +30,8 @@ Once you've gotten these installation requirements down, we can start building t
 - All the fun stuff about NFTs - the rarity, description, image, etc - is part of its **metadata**. In this tutorial, the NFT's **`string tokenURI`** will point to where the metadata is stored on [IPFS](https://ipfs.io/).
 - **ERC-4907**
 - The ERC-4907 is an extenstion of the ERC-721 token standard. `ERC4907 proposes an additional role called (user) which can be granted to addresses, and a time where the role is automatically revoked. The user role represents permission to 'use' the NFT, but not the ability to transfer it or set users.
-From the official EIP-4907 doc - (https://eips.ethereum.org/EIPS/eip-4907)` Basically it will allow you to add this functionality to any new or pre-existing ERC-721 contract to allow your NFT's to be rented out to other users. It does this made possible by adding a new role to the NFT which would be the rentee.
+From the official EIP-4907 doc - (https://eips.ethereum.org/EIPS/eip-4907).` 
+Basically it will allow you to add this functionality to any new or pre-existing ERC-721 (using a proxy) contract to allow your NFT's to be rented out to other users. It does this by adding a new "role" to the NFT called the rentee.
 
 Find out more about it [here](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-4907.md).
 
@@ -96,6 +97,8 @@ This funtion is super straightforward! Every time we mint an NFT, we want to gua
 
 
 ## Adding the ERC-4907 Capabilities 
+
+**Note all of the contracts that you need to complete this tutorial will be located in the `contracts` directory however we recommend for you to write the contracts yourself as it makes it easier to learn.
 
 You'll want to add this interface from the OpenZeppelin contracts for the ERC4907.
 
